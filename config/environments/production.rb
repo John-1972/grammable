@@ -57,6 +57,9 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "grammable_#{Rails.env}"
   config.action_mailer.perform_caching = false
 
+  # Line needed for Devise gemfile
+  config.action_mailer.default_url_options = { host: 'grammable-john-henderson.herokuapp.com' }
+
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false

@@ -31,6 +31,9 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
+  # Line needed for Devise gemfile
+  config.action_mailer.default_url_options = { host: 'localhost: 3030' }
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
