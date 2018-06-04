@@ -54,6 +54,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.7'
+  gem 'factory_bot_rails'
 end
 
 gem 'popper_js', '~> 1.11.1'
