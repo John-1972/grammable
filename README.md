@@ -1,24 +1,5 @@
-# README
+# Grammable; Test-Driven Development
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Grammable was the fourth project on the Firehose Full-stack course. It's an Instagram clone built using industry-standard, test-driven development following numerous red/green/refactor cycles.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+A demo of the site can be seen here: http://grammable-john-henderson.herokuapp.com/
