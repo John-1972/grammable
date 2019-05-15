@@ -2,7 +2,7 @@
   <% @grams.each do |gram| %>
     <div class="card">
       <div class="handle"><%= gram.user.email %></div>
-      <%= image_tag gram.picture, class: 'img-fluid' %>
+      <%= image_tag gram.picture.url, class: 'img-fluid' %>
       <p>
         <%= gram.message %>
       </p>
