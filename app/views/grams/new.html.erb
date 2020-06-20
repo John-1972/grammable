@@ -1,10 +1,11 @@
+<!-- HTML for creating a new gram -->
 <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3 card form">
-
+<!-- White 'card' containing HTML form fields, "xs" screen = 10/12 width, 1/12 indent; "sm" = 8/12 width, 2/12 indent; "md" = 6/12 width, 3/12 indent; -->
   <h1>New gram</h1>
 
   <%= simple_form_for @gram do |f| %>
     <%= f.input :message %>
     <%= f.input :picture %>
     <%= f.submit "Post!", class: 'my-btn' %>
-  <% end %>
-</div>
+  <% end %> <!-- end form -->
+</div> <!-- class="col-10..." -->

@@ -11,25 +11,26 @@
   </head>
 
   <body>
-    <div class="top-nav">
-      <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3">
-        <div class="brand float-left">
+    <div class="top-nav"> <!-- Navbar container, 100% of screen width -->
+      <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3"> <!-- Container -->
+      <!--"xs" = 10/12 width + 1/12 indent; "sm" = 8/12 w + 2/12 in; "md" = 6/12 w + 3/12 in;-->
+        <div class="brand float-left"> <!-- Push logo to left hand side -->
           Grammable
-        </div>
-        <div class="add float-right">
-          <% if current_user %>
-            Welcome, <%= current_user.email %>.
+        </div> <!-- class="brand" -->
+        <div class="add float-right"> <!-- Push nav links to right hand side -->
+          <% if current_user %> <!-- If user is signed in... -->
+            Welcome, <%= current_user.email %>. <!-- ...display their id & these links -->
             <%= link_to "New Post", new_gram_path %>
             <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
-          <% else %>
-            <%= link_to "Sign In", new_user_session_path %>
+          <% else %> <!-- But if they're not signed in... -->
+            <%= link_to "Sign In", new_user_session_path %> <!-- ...display these links instead -->
             <%= link_to "Sign Up", new_user_registration_path %>
-          <% end %>
-        </div>
-      </div>
-      <br class="clear-fix" />
-    </div>
+          <% end %> <!-- end if -->
+        </div> <!-- class="add" -->
+      </div> <!-- class="col-10..." -->
+      <br class="clear-fix" /> <!-- Clear the floats -->
+    </div> <!-- class="top-nav" -->
     
-    <%= yield %>
+    <%= yield %> <!-- Insert page text here -->
   </body>
 </html>
