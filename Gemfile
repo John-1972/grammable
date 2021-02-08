@@ -68,6 +68,6 @@ end
 gem 'rack', '~> 2.2', '>= 2.2.3'
 gem 'simple_form'
 gem 'devise', '>= 4.6.0' # Updated this by specifying a version number
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 gem 'figaro'
 gem 'fog-aws'
